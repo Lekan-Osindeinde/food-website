@@ -1,5 +1,6 @@
 import Head from "next/head";
 import Features from "../components/Features";
+import ProductList from "../components/ProductList";
 import styles from "../styles/Home.module.css";
 export default function Home() {
   return (
@@ -10,6 +11,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Features />
+      <ProductList />
     </div>
   );
 }
