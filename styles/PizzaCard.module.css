@@ -22,3 +22,15 @@
     color: #777;
     width: 60%;
 }
+@media screen and (max-width: 480px){
+    .container{
+        width: 100%;
+    }
+.title{
+    font-size: 30px;
+}
+.price, .desc{
+    font-size: 24px;
+}
+
+}

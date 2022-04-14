@@ -1,7 +1,10 @@
 import Image from "next/image";
+import { useState } from "react";
 import styles from "../styles/Navbar.module.css";
 
 const Navbar = () => {
+  const [open, setOpen] = useState(false);
+
   return (
     <div className={styles.container}>
       <div className={styles.item}>
@@ -12,6 +15,19 @@ const Navbar = () => {
           <div className={styles.text}>ORDER NOW!</div>
           <div className={styles.text}>017 8651 5434</div>
         </div>
+        <div className={styles.hamburger} onClick={() => setOpen(!open)}>
+          <div className={styles.line} />
+          <div className={styles.line} />
+          <div className={styles.line} />
+        </div>
+        <ul className={styles.menu} style={{ right: open ? "0px" : "-50vw" }}>
+          <li className={styles.menuItem}>Homepage</li>
+          <li className={styles.menuItem}>Product</li>
+          <li className={styles.menuItem}>Menu</li>
+          <li className={styles.menuItem}>Events</li>
+          <li className={styles.menuItem}>Blog</li>
+          <li className={styles.menuItem}>Contatct</li>
+        </ul>
       </div>
       <div className={styles.item}>
         <ul className={styles.list}>
