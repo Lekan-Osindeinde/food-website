@@ -1,7 +1,5 @@
 import Head from "next/head";
 import Features from "../components/Features";
-import Order from "../components/order";
-import Product from "../components/product";
 import ProductList from "../components/ProductList";
 import styles from "../styles/Home.module.css";
 export default function Home() {
@@ -14,8 +12,6 @@ export default function Home() {
       </Head>
       <Features />
       <ProductList />
-      <Product />
-      <Order />
     </div>
   );
 }
